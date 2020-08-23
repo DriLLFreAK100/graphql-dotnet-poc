@@ -1,0 +1,17 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+    margin-bottom: 1rem;
+  }
+
+  &-submitContainer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+
+    &-btn {
+      background-color: green !important;    }
+  }
+}
