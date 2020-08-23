@@ -1,4 +1,5 @@
 ﻿using GraphQL;
+using GraphQL.Types;
 
 namespace Demo.Server.Core.GraphQl.Schema
 {
@@ -8,7 +9,7 @@ namespace Demo.Server.Core.GraphQl.Schema
         {
             Query = query;
             Mutation = mutation;
-            Subscription = subscription;
+            Subscription = resolver.Resolve<DemoSubscription>();
             DependencyResolver = resolver;
         }
     }

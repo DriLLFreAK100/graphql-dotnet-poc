@@ -93,10 +93,10 @@ const Dashboard = (): JSX.Element => {
 
     if (queryData) {
       if (queryData.transactionSummaryByMonth && queryData.transactionSummaryByMonth.length > 0) {
-        elements.push(<TransactionSummary data={queryData.transactionSummaryByMonth} />);
+        elements.push(<TransactionSummary key="transaction-summary" data={queryData.transactionSummaryByMonth} />);
       }
       if (queryData.topPerformingClient && queryData.topPerformingClient.length > 0) {
-        elements.push(<TopPerformingClients data={queryData.topPerformingClient} />);
+        elements.push(<TopPerformingClients key="top-performing-client" data={queryData.topPerformingClient} />);
       }
     }
 

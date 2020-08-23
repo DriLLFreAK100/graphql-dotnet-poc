@@ -91,7 +91,7 @@ namespace Demo.Server
             services.AddSingleton<DemoMutation>();
             services.AddSingleton<DemoSubscription>();
             services.AddSingleton<ISchema, DemoSchema>();
-            services.AddSingleton<IDependencyResolver>(d => new FuncDependencyResolver(type => d.GetRequiredService(type)));
+            services.AddSingleton<IDependencyResolver>(d => new FuncDependencyResolver(d.GetRequiredService));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -109,7 +109,7 @@ namespace Demo.Server
             }
 
             app.UseWebSockets();
-            app.UseGraphQLWebSockets<DemoSchema>("/graphql");
+            app.UseGraphQLWebSockets<ISchema>("/graphql");
 
             app.UseGraphiQLServer(new GraphiQLOptions()
             {
