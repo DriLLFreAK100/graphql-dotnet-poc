@@ -1,5 +1,5 @@
 # GraphQL Dotnet Proof-of-Concept (PoC)
-A proof of concept on using GraphQL in .NET Core. This repository consists of a Frontend (Reactjs) and a Backend (.NET Core with GraphQL.NET)
+A proof of concept on using **GraphQL in .NET Core**. This repository consists of a **Frontend (Reactjs)** and a **Backend (.NET Core with GraphQL.NET)**
 
 The project showcases how Query, Mutation and Subscription can be carried out in GraphQL. 
 
@@ -11,7 +11,7 @@ To quickly start up and work with the project,
 2. Run NPM command "npm install", followed by "npm run start"
 
 ## Backend
-It is a .NET Core WebAPI project running on .NET Core 2.2, using [GraphQL.NET](https://graphql-dotnet.github.io/) package for setting up the GraphQL Server.
+It is a .NET Core WebAPI project running on **.NET Core 2.2**, using [GraphQL.NET](https://graphql-dotnet.github.io/) package for setting up the GraphQL Server.
 
 To quickly start up and work with the project, 
 1. Navigate into /Demo.Server
