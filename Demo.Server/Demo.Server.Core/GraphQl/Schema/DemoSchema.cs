@@ -1,5 +1,4 @@
 ﻿using GraphQL;
-using GraphQL.Types;
 
 namespace Demo.Server.Core.GraphQl.Schema
 {

@@ -33,15 +33,6 @@ namespace Demo.Server
             ConfigureCors(services);
             ConfigureAppScopes(services);
             ConfigureGraphQlScopes(services);
-            services
-                .AddGraphQL(new GraphQLOptions()
-                {
-                    EnableMetrics= true,
-                    ExposeExceptions = true
-                })
-                .AddWebSockets()
-                .AddDataLoader()
-                .AddGraphTypes();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -89,6 +80,16 @@ namespace Demo.Server
             services.AddSingleton<DemoSubscription>();
             services.AddSingleton<ISchema, DemoSchema>();
             services.AddSingleton<IDependencyResolver>(d => new FuncDependencyResolver(d.GetRequiredService));
+
+            services
+                .AddGraphQL(new GraphQLOptions()
+                {
+                    EnableMetrics = true,
+                    ExposeExceptions = true
+                })
+                .AddWebSockets()
+                .AddDataLoader()
+                .AddGraphTypes();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

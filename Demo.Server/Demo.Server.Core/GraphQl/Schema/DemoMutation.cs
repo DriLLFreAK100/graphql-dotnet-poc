@@ -1,5 +1,4 @@
 ﻿using Demo.Server.Core.BusinessEntity;
-using Demo.Server.Core.BusinessEntity.Input;
 using Demo.Server.Core.GraphQl.Types;
 using Demo.Server.Core.Service.Interface;
 using GraphQL.Types;
