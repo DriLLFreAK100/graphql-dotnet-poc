@@ -3,6 +3,8 @@ A proof of concept on using **GraphQL in .NET Core**. This repository consists o
 
 The project showcases how Query, Mutation and Subscription can be carried out in GraphQL. 
 
+Write up on the details can found here at [Codefee Time](https://www.codefeetime.com/post/building-web-application-with-react-apollo-client-graphql-net-core-webapi/)
+
 ## Frontend
 It is a Reactjs project using the [Apollo Client](https://www.apollographql.com/docs/react/) package.
 
