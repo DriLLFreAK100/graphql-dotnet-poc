@@ -1,4 +1,4 @@
-# GraphQL Dotnet Proof-of-Concept (PoC)
+# Proof-of-Concept (PoC) - GraphQL .NET Core, React, Apollo
 A proof of concept on using **GraphQL in .NET Core**. This repository consists of a **Frontend (Reactjs)** and a **Backend (.NET Core with GraphQL.NET)**
 
 The project showcases how Query, Mutation and Subscription can be carried out in GraphQL. 
